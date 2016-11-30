@@ -1,0 +1,12 @@
+Ada muncul pesan error:
+"Error:(33, 37) java: clone() has protected access in java.lang.Object"
+
+Karena:
+Class Tester memanggil method clone() dari object Cicak yang memiliki access modifier protected.
+Artinya method clone() tersebut hanya bisa diakses oleh subclassnya saja.
+
+Tujuan memanggil method clone tersebut adalah untuk membuat object baru tanpa menggunakan constructor.
+Namun method clone belum diimplement di class cicak atau class-class parent dari cicak .
+
+Oleh sebab itu kita perlu mengimplement interface Cloneable terlebih dahulu,
+lalu mengoverride methode clone di class cicak atau di class-class parent dari cicak.

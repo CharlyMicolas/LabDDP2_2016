@@ -1,0 +1,22 @@
+1. Abstract Class
+   Class yang bisa memiliki method abstract atau belum memiliki wujud kongkrit. 
+   Class ini baru memiliki wujud kongkrit jika diinherit oleh subclassnya.
+   Sebenarnya abstract class ini bisa dikatakan sebagai class khusus untuk keperluan inheritance.
+   
+2. Mengapa Piece harus berisifat abstract
+   Karena class Piece memiliki method  abstract "isvalid" yang baru bisa kongkirit jika diimplement di class-class bidak catur.
+   
+3. Beda Abstract dan Interface
+   Abstract class bisa berisi abstract method atau pun non abstract method.
+   Interface hanya boleh berisi abstract method.
+
+   Pada abstract class harus dituliskan modifier abstractnya.
+   Sedangkan pada inteface tidak perlu.
+   
+   Abstract Class bisa memiliki method yang berisifat static/final.
+   Interface tidak boleh punya method static/final.
+   
+   Subclass mengextends abstract class.
+   Subclass mengimplement interface.
+   
+   
